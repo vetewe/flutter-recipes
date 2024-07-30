@@ -80,9 +80,15 @@ class _RecipesDetailState extends State<RecipesDetail> {
                           color: Colors.amber,
                           shape: BoxShape.circle,
                         ),
-                        child: IconButton(
-                          icon: Icon(Icons.arrow_back_ios, color: Colors.black),
-                          onPressed: () => Navigator.pop(context),
+                        child: Tooltip(
+                          message: 'Back',
+                          child: IconButton(
+                            icon: Icon(
+                              Icons.arrow_back_ios,
+                              color: Colors.black,
+                            ),
+                            onPressed: () => Navigator.pop(context),
+                          ),
                         ),
                       ),
                       Container(
@@ -90,12 +96,15 @@ class _RecipesDetailState extends State<RecipesDetail> {
                           color: Colors.amber,
                           shape: BoxShape.circle,
                         ),
-                        child: IconButton(
-                          icon: Icon(
-                            isSaved ? Icons.bookmark : Icons.bookmark_border,
-                            color: isSaved ? Colors.black : Colors.white,
+                        child: Tooltip(
+                          message: 'Saved',
+                          child: IconButton(
+                            icon: Icon(
+                              isSaved ? Icons.bookmark : Icons.bookmark_border,
+                              color: isSaved ? Colors.black : Colors.white,
+                            ),
+                            onPressed: _toggleSaved,
                           ),
-                          onPressed: _toggleSaved,
                         ),
                       ),
                     ],
