@@ -18,7 +18,3 @@ Aplikasi ini saya persembahkan untuk semua orang terutama untuk para foodies yan
 3. Run
 
 Namun Api yang saya gunakan dalam aplikasi ini masih lokal, jadi untuk menggunakan api tersebut harus di ganti dengan api yang sudah saya sediakan pada link berikut : https://github.com/vetewe/recipes-api.git
-
-## Rencana Update Kedepannya
-
-Insha Allah akan di update lagi dengan fitur-fitur yang lebih menarik dan juga lebih interaktif
